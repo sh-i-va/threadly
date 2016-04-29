@@ -1,79 +1,115 @@
-html, body {
-    font-family: 'Montserrat', sans-serif;
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+    font-size: 36px;
 }
 
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
 h1 {
-    border-left: 2px solid #00f28f;
     font-size: 48px;
     font-weight: 400;
+    line-height: 1.1;
+    margin: 0;
+    margin-top: 20px;
     padding-left: 20px;
+    border-left: 2px solid #00f28f;
 }
 
 .main {
-    margin-top: 80px;
+    margin-top: 90px;
 }
 
-form input {
-    background: #f0f0f0;
+.input {
+    width: 83.333333%;
+    float: left;
+}
 
-    border: none;
-    border-left: 2px solid #fff;
-
-    font-size: 36px;
+input {
+    box-sizing: border-box;
+    font: inherit;
+    line-height: 51px;
     padding: 20px;
-    width: 100%;
-
-    transition: background 2s, border-left 2s;
-}
-
-form input:focus {
-    background: #fff;
-    border-left: 2px solid #000;
-    box-shadow: none;
-    outline: none;
-}
-
-
-button.btn {
-    background: transparent;
     border: none;
-
-    color: #00f28f;
-    cursor: pointer;
-
-    font-size: 36px;
-
-    padding: 20px 24px;
-
-    transition: background 2s, color 2s;
+    margin: 0;
+    border-left: 2px solid #ffffff;
+    background: #f0f0f0;
+    width: 100%;
+    transition: border 1s, background 1s;
 }
 
-button.btn:hover {
+input:focus {
+    outline: none;
+    background: #ffffff;
+    border-color: #000000;
+}
+
+.btn {
+    font: inherit;
+    line-height: 51px;
+    border: none;
+    border-radius: 4px;
+    margin: 0;
+    margin-left: 25px;
+    padding: 20px 24px;
+    color: #00f28f;
+    background: #ffffff;
+    cursor: pointer;
+    transition: color 1s, background 1s;
+}
+
+.btn:hover {
+    color: #ffffff;
     background: #00f28f;
-    color: #fff;
 }
 
 .comments {
-    margin-top: 20px;
-    list-style: none;
-    padding-left: 0px;
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+    list-style-type: none;
 }
 
-
-li {
+.comments li {
+    margin: 0;
+    margin-bottom: 36px;
     padding-left: 20px;
-    border-left: 2px solid #000;
-    font-size: 36px;
-    margin: 0 0 36px;
+    border-left: 2px solid #000000;
+    line-height: 51px;
 }
 
+@media (max-width:1200px) {
+    .container {
+        max-width: 940px;
+    }
+}
 
+@media (max-width:980px) {
+    .container { max-width: 720px; }
+    .input { width: 66.666666%; }
+}
 
-
-
-
-
-
-
-
+@media (max-width:750px) {
+    .container { max-width: 480px; }
+    .input { width: 100%; }
+    .btn {
+        width: 100%;
+        margin: 0;
+        margin-top: 20px;
+        border: 1px solid #00f28f;
+    }
+    h1 {
+        text-align: center;
+        font-size: 56px;
+        padding: 0;
+        padding-bottom: 20px;
+        border: none;
+        border-bottom: 2px solid #00f28f;
+    }
+    .main { margin-top: 60px; }
+}

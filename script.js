@@ -1,18 +1,22 @@
-var main = function() {
+var post = document.getElementById('post');
 
-    $('form').submit(function(event) {
-        var $input = $(event.target).find('input');
-        var comment = $input.val();
+function formSubmit()
+{
+    var newComment = document.getElementById('newComment');
+    var commentsSection = document.getElementById('comments');
 
-        if (comment != "") {
-            var html = $('<li>').text(comment);
-            html.prependTo('#comments');
-            $input.val("");
-        }
+    if(newComment.value != '')
+    {
+        var newCommentNode = document.createElement('li');
+        var commentTextNode = document.createTextNode(newComment.value);
 
-        return false;
-    });
+        newCommentNode.appendChild(commentTextNode);
+        commentsSection.insertBefore(newCommentNode,commentsSection.firstChild);
+        newComment.value = '';
+        newComment.blur();
+    }
 
+    return false;
 }
 
-$(document).ready(main);
+post.onsubmit = formSubmit;
