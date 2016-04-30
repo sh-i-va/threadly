@@ -2,7 +2,7 @@
 
 This demonstrative website was created from scratch as a part of the Live Coding session hosted by Codecademy on April 28, Thursday.
 
-The original solution is hosted by Dan Ordille on [GitHub](github.com/dordille/threadly). This repo was forked from the same.
+The original solution is hosted by Dan Ordille on [GitHub](https://github.com/dordille/threadly). This repo was forked from the same.
 
 The original solution used Bootstrap and jQuery for development. I rewrote the project using vanilla CSS and JavaScript as an exercise.
 
