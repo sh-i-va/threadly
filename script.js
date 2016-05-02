@@ -29,6 +29,8 @@ function formSubmit()
                 prevHeight += prevComments[ii-1].clientHeight + 36;
                 prevComments[ii].style.top = prevHeight + 'px';
             }
+
+            commentsSection.style.height = (prevHeight + 87) + 'px'
         }, 1);
     }
 
