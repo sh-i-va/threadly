@@ -17,13 +17,21 @@ h1 {
     line-height: 1.1;
     margin: 0;
     margin-top: 20px;
-    padding-left: 20px;
+    padding-left: 5px;
     border-left: 2px solid #00f28f;
+    opacity: 0;
+    transition: opacity .4s, padding-left .6s;
 }
 
 .main {
     margin-top: 70px;
     line-height: 1.42em;
+}
+
+.form {
+    opacity: 0;
+    margin-top: -30px;
+    transition: opacity .4s, margin-top .6s;
 }
 
 .input {
@@ -77,6 +85,8 @@ input:focus {
     margin: 0;
     margin-top: 40px;
     list-style-type: none;
+    opacity: 0;
+    transition: opacity .4s;
 }
 
 .comments li {
@@ -84,7 +94,7 @@ input:focus {
     top: 0;
     padding-left: 20px;
     border-left: 2px solid #000000;
-    transition: top 0.5s;
+    transition: top .6s, left .6s;
 }
 
 @media (max-width:1200px) {

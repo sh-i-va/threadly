@@ -2,6 +2,30 @@ var post = document.getElementById('post');
 var commentsSection = document.getElementById('comments');
 var prevComments = commentsSection.getElementsByTagName('li');
 
+function intro()
+{
+    var title = document.querySelector('h1');
+
+    window.setTimeout(function() {
+        title.style.opacity = '1';
+        title.style.paddingLeft = '20px';
+    }, 500);
+
+    window.setTimeout(function() {
+        post.style.opacity = '1';
+        post.style.marginTop = '0';
+    }, 700);
+    
+    window.setTimeout(function() {
+        commentsSection.style.opacity = '1';
+        prevComments[0].style.left = '0';
+    }, 900);
+
+    window.setTimeout(function() {
+        prevComments[1].style.left = '0';       
+    }, 970);
+}
+
 function formSubmit()
 {
     var newComment = document.getElementById('newComment');
@@ -38,3 +62,4 @@ function formSubmit()
 }
 
 post.onsubmit = formSubmit;
+window.onload = intro;
