@@ -20,7 +20,7 @@ h1 {
     padding-left: 5px;
     border-left: 2px solid #00f28f;
     opacity: 0;
-    transition: opacity .4s, padding-left .6s;
+    transition: opacity .6s, padding-left .6s;
 }
 
 .main {
@@ -31,7 +31,7 @@ h1 {
 .form {
     opacity: 0;
     margin-top: -30px;
-    transition: opacity .4s, margin-top .6s;
+    transition: opacity .6s, margin-top .6s;
 }
 
 .input {
@@ -86,7 +86,7 @@ input:focus {
     margin-top: 40px;
     list-style-type: none;
     opacity: 0;
-    transition: opacity .4s;
+    transition: opacity .6s;
 }
 
 .comments li {
