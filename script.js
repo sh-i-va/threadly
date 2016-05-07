@@ -8,7 +8,8 @@ function intro()
 
     window.setTimeout(function() {
         title.style.opacity = '1';
-        title.style.paddingLeft = '20px';
+        if (document.documentElement.clientWidth > 750)
+            title.style.paddingLeft = '20px';
     }, 300);
 
     window.setTimeout(function() {
