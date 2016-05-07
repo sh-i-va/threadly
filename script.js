@@ -14,16 +14,16 @@ function intro()
     window.setTimeout(function() {
         post.style.opacity = '1';
         post.style.marginTop = '0';
-    }, 500);
+    }, 800);
     
     window.setTimeout(function() {
         commentsSection.style.opacity = '1';
         prevComments[0].style.left = '0';
-    }, 700);
+    }, 1100);
 
     window.setTimeout(function() {
         prevComments[1].style.left = '0';       
-    }, 770);
+    }, 1170);
 }
 
 function formSubmit()
