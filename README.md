@@ -12,7 +12,7 @@ I believe frameworks and libraries make us lazy. Of course they are useful in re
 
 ### Does it work?
 
-It works fine on Safari 8 on Mac OS X and the built in browser for Android running CyanogenMod 13. Haven't tested on other platforms. [Preview](https://sh-i-va.github.io/threadly)
+It works fine on Safari 8 on Mac OS X and the built in browser for Android running CyanogenMod 13. Haven't tested on other platforms. [Preview](https://shivaprsdv.github.io/threadly)
 
 So far I haven't added any vendor specific prefixes to any CSS properties, so the rendering might be inconsistent in some (older) browsers. I haven't added any documentation to the code either, might add it soon.
 
